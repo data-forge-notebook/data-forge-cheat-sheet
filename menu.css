@@ -1,0 +1,77 @@
+.menu {
+    background: white;
+    position:  absolute;
+    top:  -120px;
+    right:  0;
+    height:  225px;
+    padding:  20px;
+    max-width: 100%;
+    transition:  top 150ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    overflow:  hidden;
+    box-sizing:  border-box;
+    border: 1px solid lightgray;
+    border-top:none;
+}
+    
+#toggle {
+    position: absolute;
+    cursor: pointer;
+    left: -100%;
+    top: -100%;
+}
+    
+#toggle + label {
+    z-index: 100;
+    position: absolute;
+    top: 50;
+    right: 15;
+    cursor: pointer;
+    border-radius:  1px;
+    padding:  10px;
+    line-height: 20px;
+    font-size: 2em;
+    text-align: center;
+    -webkit-font-smoothing:  antialiased;
+    cursor:  pointer;
+    transition: all 500ms ease;
+    color: gray;
+    border: 1px solid lightgray;
+    transition: top 180ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+#toggle + label:after {
+    content: "☰" 
+}
+        
+#toggle:checked ~ .menu {
+    top: 0;
+}
+
+#toggle:checked + label {
+    top: 170;
+}
+
+#toggle:checked + label:after {
+    content: "X"
+}
+
+.menu li {
+    list-style: none;
+    text-align: right;
+}
+
+.menu table {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.menu td {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+@media screen and (max-width: 1000px) {
+    #root {
+        padding-top: 100px;
+    }
+}

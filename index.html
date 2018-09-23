@@ -11,14 +11,33 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro" rel="stylesheet">
         <link href="node_modules/c3/c3.min.css" rel="stylesheet">
         <link rel="stylesheet" data-name="vs/editor/editor.main" href="node_modules/monaco-editor/min/vs/editor/editor.main.css">
+        <link rel="stylesheet" type="text/css" href="menu.css">
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
-        <div style="position: relative">
-            <div style="position: absolute; right: 0; top: 0;">
-                Run this notebook with <a href="http://www.data-forge-notebook.com/" target="_blank">Data-Forge Notebook</a>
-            </div>
-            <div id="root"></div>
+        <!-- https://codepen.io/surjithctly/pen/pLDwe -->
+        <input type="checkbox" name="toggle" id="toggle" />
+        <label for="toggle"></label>
+
+        <div id="root"></div>
+
+        <div class="menu">
+            <table>
+                <tr>
+                    <td></td>
+                    <td><a href="data-forge-cheat-sheet.pdf" target="_blank">Download as PDF</a></td>
+                </tr>
+                <tr>
+                    <td>The book</td>
+                    <td><a href="http://bit.ly/2t2cJu2" target="_blank">Data Wrangling with JavaScript</a></td>
+                </tr>
+                <tr>
+                    <td>The blog</td>
+                    <td><a href="http://www.the-data-wrangler.com/" target="_blank">The Data Wrangler</a></td>
+                </tr>
+            </table>
+
+            <div style="padding-top: 15px";><strong>Edit <em>and</em> run</strong> this notebook in <a href="http://www.data-forge-notebook.com/" target="_blank">Data-Forge Notebook</a></div>
         </div>
 
         <script src="notebook.js"></script>
