@@ -7,7 +7,7 @@ const notebook = {
             {
                 "id": "186c4660-95d2-11e8-beb3-ed1734412cc1",
                 "cellType": "markdown",
-                "code": "# Data-Forge cheat sheet\r\n\r\nSnippets of JS code that show how to work with data using Data-Forge.\r\n\r\nFrom the book [Data Wrangling with JavaScript](http://bit.ly/2t2cJu2)",
+                "code": "# Data-Forge cheat sheet\r\n\r\nSnippets of JS code that show how to work with data using [Data-Forge](http://www.data-forge-js.com/).\r\n\r\nFrom the book [Data Wrangling with JavaScript](http://bit.ly/2t2cJu2)\r\n\r\nFor more in-depth help please see the [The Guide](https://github.com/data-forge/data-forge-ts/blob/master/docs/guide.md) or [the API docs](https://data-forge.github.io/data-forge-ts/).",
                 "lastEvaluationDate": "2018-09-24T08:54:12.146+10:00",
                 "output": [],
                 "errors": []
@@ -15,7 +15,7 @@ const notebook = {
             {
                 "id": "3af70c60-95d2-11e8-beb3-ed1734412cc1",
                 "cellType": "markdown",
-                "code": "## Loading data into a dataframe\r\n\r\nLoad data from memory into a Data-Forge dataframe.",
+                "code": "## Loading data into a dataframe\r\n\r\nLoad data from memory into a Data-Forge [`DataFrame`](https://data-forge.github.io/data-forge-ts/classes/dataframe.html).",
                 "lastEvaluationDate": "2018-09-24T08:54:12.146+10:00",
                 "output": [],
                 "errors": []
@@ -75,7 +75,7 @@ const notebook = {
             {
                 "id": "893569d0-95d2-11e8-beb3-ed1734412cc1",
                 "cellType": "markdown",
-                "code": "## Loading CSV files\r\n\r\nLoad data from a CSV file:",
+                "code": "## Loading CSV files\r\n\r\nLoad data from a CSV file using [`readFile`](https://data-forge.github.io/data-forge-ts/index.html#readfile) and [`parseCSV`](https://data-forge.github.io/data-forge-ts/interfaces/iasyncfilereader.html#parsecsv).",
                 "lastEvaluationDate": "2018-09-24T08:54:12.148+10:00",
                 "output": [],
                 "errors": []
@@ -168,7 +168,7 @@ const notebook = {
             {
                 "id": "5c89a4d0-95d4-11e8-beb3-ed1734412cc1",
                 "cellType": "markdown",
-                "code": "## Loading JSON files\r\n\r\nAlso load data from JSON files:",
+                "code": "## Loading JSON files\r\n\r\nLoad data from JSON files using [`readFile`](https://data-forge.github.io/data-forge-ts/index.html#readfile) and [`parseJSON`](https://data-forge.github.io/data-forge-ts/interfaces/iasyncfilereader.html#parsejson).",
                 "lastEvaluationDate": "2018-09-24T08:54:12.151+10:00",
                 "output": [],
                 "errors": []
@@ -261,7 +261,7 @@ const notebook = {
             {
                 "id": "dd559920-95d4-11e8-beb3-ed1734412cc1",
                 "cellType": "markdown",
-                "code": "## Data transformation\r\n\r\nTransform or rewrite your data set using the `select` function (similar to JavaScript's `map` function):\r\n\r\nExample: Transforming the value of the Height column from inches to centimetres.",
+                "code": "## Data transformation\r\n\r\nTransform or rewrite your data set using the [`select`](https://data-forge.github.io/data-forge-ts/classes/dataframe.html#select) function (similar to JavaScript's `map` function):\r\n\r\nExample: Transforming the value of the Height column from inches to centimetres.",
                 "lastEvaluationDate": "2018-09-24T08:54:12.156+10:00",
                 "output": [],
                 "errors": []
@@ -361,7 +361,7 @@ const notebook = {
             {
                 "id": "61fe8410-95d6-11e8-beb3-ed1734412cc1",
                 "cellType": "markdown",
-                "code": "## Data filtering\r\n\r\nFilter data with the the `where` function (similar to JavaScript's `filter` function).\r\n\r\nExample: Filtering for tall people.",
+                "code": "## Data filtering\r\n\r\nFilter data with the the [`where`](https://data-forge.github.io/data-forge-ts/classes/dataframe.html#where) function (similar to JavaScript's `filter` function).\r\n\r\nExample: Filtering for tall people.",
                 "lastEvaluationDate": "2018-09-24T08:54:12.158+10:00",
                 "output": [],
                 "errors": []
@@ -498,7 +498,7 @@ const notebook = {
             {
                 "id": "47a5ab50-96a5-11e8-991f-fb26465f6522",
                 "cellType": "markdown",
-                "code": "### Removing one or more series\r\n\r\nExample: Removing the Height and Weight columns.",
+                "code": "### Removing one or more series\r\n\r\nExample: Removing the Height and Weight columns using the [`dropSeries`](https://data-forge.github.io/data-forge-ts/classes/dataframe.html#dropseries) function.",
                 "lastEvaluationDate": "2018-09-24T08:54:12.161+10:00",
                 "output": [],
                 "errors": []
@@ -563,7 +563,7 @@ const notebook = {
             {
                 "id": "518442c0-96a6-11e8-928f-25163f41bb46",
                 "cellType": "markdown",
-                "code": "### Renaming one or more series\r\n\r\nExample: Renaming the Height and Weight columns so they don't encode the unit of measurement.",
+                "code": "### Renaming one or more series\r\n\r\nExample: Renaming the Height and Weight columns using the [`renameSeries`](https://data-forge.github.io/data-forge-ts/classes/dataframe.html#renameseries) function so that the field names don't specify the unit of measurement.",
                 "lastEvaluationDate": "2018-09-24T08:54:12.162+10:00",
                 "output": [],
                 "errors": []
@@ -638,7 +638,7 @@ const notebook = {
             {
                 "id": "8a49a5a0-96a6-11e8-928f-25163f41bb46",
                 "cellType": "markdown",
-                "code": "### Extracting, transforming and merging a series\r\n\r\nExample: converting the Height column from inches to centimeters",
+                "code": "### Extracting, transforming and merging a series\r\n\r\nExample: converting the Height column from inches to centimeters.",
                 "lastEvaluationDate": "2018-09-24T08:54:12.165+10:00",
                 "output": [],
                 "errors": []
@@ -713,7 +713,7 @@ const notebook = {
             {
                 "id": "7b7489e0-96a7-11e8-928f-25163f41bb46",
                 "cellType": "markdown",
-                "code": "### A simpler way to transform a series\r\n\r\nExample: Using the DataFrame transformSeries column makes the previous example a bit simpler.",
+                "code": "### A simpler way to transform a series\r\n\r\nExample: Using the DataFrame [`transformSeries`](https://data-forge.github.io/data-forge-ts/classes/dataframe.html#transformseries) function makes the previous example a bit simpler.",
                 "lastEvaluationDate": "2018-09-24T08:54:12.167+10:00",
                 "output": [],
                 "errors": []
@@ -788,7 +788,7 @@ const notebook = {
             {
                 "id": "b4e261c0-96a7-11e8-928f-25163f41bb46",
                 "cellType": "markdown",
-                "code": "## Group and summarize\r\n\r\nWe can use the `groupBy` function to group our data set and then boil each group down to a summary.\r\n\r\nExample: Getting the average height and weight for male and female groups.",
+                "code": "## Group and summarize\r\n\r\nWe can use the [`groupBy`](https://data-forge.github.io/data-forge-ts/classes/dataframe.html#groupby) function to group our data set and then boil each group down to a summary.\r\n\r\nExample: Getting the average height and weight for male and female groups.",
                 "lastEvaluationDate": "2018-09-24T08:54:12.170+10:00",
                 "output": [],
                 "errors": []
@@ -850,7 +850,7 @@ const notebook = {
             {
                 "id": "3e86e4a0-96a8-11e8-928f-25163f41bb46",
                 "cellType": "markdown",
-                "code": "## Aggregation\r\n\r\nWe can use the `aggregate` function (like the JavaScript `reduce` function) to boil our entire data set down to a simple summary.\r\n\r\nExample: Get the average height and weight for the entire group.",
+                "code": "## Aggregation\r\n\r\nWe can use the [`aggregate`](https://data-forge.github.io/data-forge-ts/classes/dataframe.html#aggregate) function (like the JavaScript `reduce` function) to boil our entire data set down to a simple summary.\r\n\r\nExample: Get the average height and weight for the entire group.",
                 "lastEvaluationDate": "2018-09-24T08:54:12.172+10:00",
                 "output": [],
                 "errors": []
@@ -879,7 +879,7 @@ const notebook = {
             {
                 "id": "6d4e17f0-9909-11e8-a137-ad9568bc5ad7",
                 "cellType": "markdown",
-                "code": "## Save CSV files\r\n\r\nSave your modified data to a CSV file:",
+                "code": "## Save CSV files\r\n\r\nSave your modified data to a CSV file using functions [`asCSV`](https://data-forge.github.io/data-forge-ts/classes/dataframe.html#ascsv) and [`writeFile`](https://data-forge.github.io/data-forge-ts/interfaces/icsvserializer.html#writefile).",
                 "lastEvaluationDate": "2018-09-24T08:54:12.176+10:00",
                 "output": [],
                 "errors": []
@@ -896,7 +896,7 @@ const notebook = {
             {
                 "id": "11c22920-990a-11e8-a137-ad9568bc5ad7",
                 "cellType": "markdown",
-                "code": "## Save JSON files\r\n\r\nSave your modified data to a JSON file:",
+                "code": "## Save JSON files\r\n\r\nSave your modified data to a JSON file using function [`asJSON`](https://data-forge.github.io/data-forge-ts/classes/dataframe.html#asjson) and [`writeFile`](https://data-forge.github.io/data-forge-ts/interfaces/ijsonserializer.html#writefile).",
                 "lastEvaluationDate": "2018-09-24T08:54:12.178+10:00",
                 "output": [],
                 "errors": []
