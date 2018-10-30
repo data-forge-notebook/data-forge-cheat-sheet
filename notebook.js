@@ -913,7 +913,7 @@ const notebook = {
             {
                 "id": "821cdcc0-dc89-11e8-9ed7-adb030f971aa",
                 "cellType": "markdown",
-                "code": "### Getting data from a REST API\r\n\r\nUse the [`axios` module](https://www.npmjs.com/package/axios) to retreive data from a REST API (with data from [JSONPlaceholder](https://jsonplaceholder.typicode.com/)).",
+                "code": "## Getting data from a REST API\r\n\r\nUse the [`axios` module](https://www.npmjs.com/package/axios) to retreive data from a REST API (with data from [JSONPlaceholder](https://jsonplaceholder.typicode.com/)).",
                 "lastEvaluationDate": "2018-10-31T07:20:40.247+10:00",
                 "output": [],
                 "errors": []
