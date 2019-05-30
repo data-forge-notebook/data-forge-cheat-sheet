@@ -1,9 +1,9 @@
 .menu {
     background: white;
     position:  absolute;
-    top:  -150px;
-    right:  0;
-    height:  255px;
+    top:  -160px;
+    right:  20;
+    height:  260px;
     padding:  20px;
     max-width: 100%;
     transition:  top 150ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
@@ -24,7 +24,7 @@
     z-index: 100;
     position: absolute;
     top: 50;
-    right: 15;
+    right: 35;
     cursor: pointer;
     border-radius:  1px;
     padding:  10px;
@@ -35,7 +35,6 @@
     cursor:  pointer;
     transition: all 500ms ease;
     color: gray;
-    border: 1px solid lightgray;
     transition: top 180ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
