@@ -80,10 +80,6 @@ iframe {
     margin-bottom: 15px;
 }
 
-.code-cell .cell-border {
-    overflow: hidden;
-}
-
 .flex-col {
     display: flex;
     flex-direction: column;
