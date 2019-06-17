@@ -94880,9 +94880,6 @@ const React = require("react");
 const ReactDOM = require("react-dom");
 const sheet_1 = require("./export-model/sheet");
 ReactDOM.render(React.createElement("div", null,
-    React.createElement("div", { className: "center", style: { paddingTop: "15px", paddingBottom: "5px" } },
-        "Run this notebook with ",
-        React.createElement("a", { href: "http://www.data-forge-notebook.com/", target: "_blank" }, "Data-Forge Notebook")),
     React.createElement(sheet_1.SheetUI, { model: notebook.sheet }),
     React.createElement("div", { className: "center", style: { paddingTop: "15px", paddingBottom: "15px" } },
         "This notebook exported from ",
