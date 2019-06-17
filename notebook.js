@@ -1,4 +1,3 @@
-const baseName = "data-forge-cheat-sheet";
 const notebook = {
     "version": 1,
     "sheet": {
