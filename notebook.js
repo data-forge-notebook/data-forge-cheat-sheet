@@ -361,7 +361,7 @@ const notebook = {
             {
                 "id": "61fe8410-95d6-11e8-beb3-ed1734412cc1",
                 "cellType": "markdown",
-                "code": "## Data filtering\r\n\r\nFilter data with the the [`where`](https://data-forge.github.io/data-forge-ts/classes/dataframe.html#where) function (similar to JavaScript's `filter` function).\r\n\r\nExample: Filtering for tall people.",
+                "code": "## Data filtering\r\n\r\nFilter data with the [`where`](https://data-forge.github.io/data-forge-ts/classes/dataframe.html#where) function (similar to JavaScript's `filter` function).\r\n\r\nExample: Filtering for tall people.",
                 "lastEvaluationDate": "2018-10-31T08:52:07.417+10:00",
                 "output": [],
                 "errors": []
