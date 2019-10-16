@@ -9,6 +9,7 @@
 
         <link href="./assets/normalize.css/normalize.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Roboto|Noto+Sans|Source+Code+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="tailwind.css" />
         <link href="./assets/c3/c3.min.css" rel="stylesheet">
         <link rel="stylesheet" data-name="vs/editor/editor.main" href="./assets/monaco-editor/min/vs/editor/editor.main.css">
         <link rel="stylesheet" type="text/css" href="menu.css">
@@ -38,7 +39,61 @@
         <input type="checkbox" name="toggle" id="toggle" />
         <label for="toggle"></label>
 
-        <div id="root"></div>
+        <div class="flex flex-row flex-wrap">
+            <div class="w-full md:w-3/4 lg:w-3/4 xl:w-3/4">
+                <div class="pl-4 pr-4">
+                    <div id="root"></div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/4 lg:w-1/4 xl:w-1/4">
+                <div 
+                    class="flex flex-col items-center text-center border rounded p-4 mt-2 dfn-ad mt-32"
+                    style="background-color: #4182E4;"
+                    >
+                    <a 
+                        target="_blank"
+                        href="https://www.data-forge-notebook.com" 
+                        >
+                        <img 
+                            class="w-full" 
+                            src="dfn-logo.png" 
+                            alt="Data-Forge Notebook"
+                            >
+                    </a>
+                    <div class="text-sm mt-4 leading-normal">Exploratory coding, data analysis and visualization for JavaScript and TypeScript</div>
+                    <a 
+                        target="_blank"
+                        href="https://www.data-forge-notebook.com" 
+                        class="inline-block font-bold border rounded text-blue-500 border-white hover:text-blue-700 bg-white p-8 pt-3 pb-3 mt-4"
+                        >
+                        Learn more
+                    </a>
+                </div>
+                <div 
+                    class="flex flex-col items-center text-center border rounded p-4 mt-8 dfn-ad"
+                    style="background-color: #01313F;"
+                    >
+                    <a 
+                        target="_blank"
+                        href="http://bit.ly/2t2cJu2" 
+                        >
+                        <img 
+                            class="w-full" 
+                            src="JSDW.png" 
+                            alt="Data Wrangling with JavaScript"
+                            >
+                    </a>
+                    <div class="text-sm mt-4 leading-normal">A practical and comprehensive guide to working with data in JavaScript</div>
+                    <a 
+                        target="_blank"
+                        href="http://bit.ly/2t2cJu2" 
+                        class="inline-block font-bold border rounded text-blue-500 border-white hover:text-blue-700 bg-white p-8 pt-3 pb-3 mt-4"
+                        >
+                        Learn more
+                    </a>
+                </div>
+            </div>
+        </div>
 
         <div class="menu">
             <table>

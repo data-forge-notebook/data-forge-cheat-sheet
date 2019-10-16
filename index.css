@@ -4,11 +4,6 @@ body {
     margin: auto;
 }
 
-.container {
-    width: calc(100% - 30px);
-    margin: auto;
-}
-
 .output-border {
     font-family: 'Source Code Pro', monospace !important;
     font-size: 0.85em;
@@ -95,3 +90,8 @@ iframe {
     align-items: center;
 }
 
+.dfn-ad {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
